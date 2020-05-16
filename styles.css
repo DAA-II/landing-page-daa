@@ -1,0 +1,24 @@
+:root {
+  --colorPrimary: #1976d2;
+  --colorBackground: #fff;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--colorBackground);
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.header-site {
+  background-color: var(--colorPrimary);
+}
