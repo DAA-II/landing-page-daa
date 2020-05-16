@@ -6,89 +6,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./styles.css" rel="stylesheet" type="text/css">
   <script src="https://kit.fontawesome.com/508f7c03d6.js" crossorigin="anonymous"></script>
-  <script src="./js/index.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./js/index.js-" defer></script>
   <title>Proyecto DAAII</title>
 </head>
 
 <body>
   <header class="header-site">
-    <nav>
-      <ul>
-        <li>Descripción</li>
-        <li>Impact Mapping</li>
-        <li>Integrantes</li>
+    <nav class="container navbar-site">
+      <ul class="navbar-site__list">
+        <li class="navbar-site__item">Descripción</li>
+        <li class="navbar-site__item">Impact Mapping</li>
+        <li class="navbar-site__item">Integrantes</li>
       </ul>
     </nav>
   </header>
   <main class="container">
-    <section>
-      <h1>Proyecto Ecommerce Cheese Socks</h1>
-      <p>El objetivo del proyecto es crear un ecommerce para la marca <a href="https://www.cheesesocks.com/">cheese
+    <section class="description-content">
+      <div class="logo">
+        <img src="public/img/logo-cheese-socks.png" alt="logo-cheesesocks" />
+      </div>
+      <h1 class="title-main">Proyecto Ecommerce Cheese Socks</h1>
+      <p class="description-content__paragraph">El objetivo del proyecto es crear un ecommerce para la marca <a
+          class="description-content__link" href="https://www.cheesesocks.com/">cheese
           socks</a>, la cual se dedica a vender medias
-        con diseños únicos, para desarrollar el sistema utilizaremos las tecnologías, métodos y arquitecturas vistas en
+        con diseños únicos, para desarrollar el sistema utilizaremos las tecnologías, métodos y arquitecturas vistas
+        en
         el curso de Desarrollo de Aplicaciones WEB desarrollado por la institución IDAT.</p>
     </section>
-    <section>
-      <h2>Impact Mapping</h2>
-      <p>El Impact Mapping es una técnica empleada en metodologías ágiles que nos ayuda de una forma visual a pensar en
+    <section class="impact-mapping">
+      <h2 class="impact-mapping__title">Impact Mapping</h2>
+      <p class="impact-mapping__paragraph">El Impact Mapping es una técnica empleada en metodologías ágiles que nos
+        ayuda de una forma visual a pensar en
         las
         metas que realmente queremos lograr y cómo alcanzarlas.</p>
-      <div>
-        <img src="" alt="impact mapping cheese socks project">
+      <a class="button-coggle" href="https://coggle.it/diagram/Xq7967d5T1CbDGSS/t/aumentar-las-ventas-realizadas-por-experiencia-de-compra/362afc7b041c228d7fd55d74f99014abce3a004b56bb63ee7da05e8651ba928f" title="ver impact mapping en coggle">Ver en coggle</a>
+      <div class="container-image">
+        <img src="public/img/impact-mapping.png" alt="impact mapping cheese socks project">
       </div>
     </section>
-    <section>
-      <h2>Integrantes</h2>
-      <ul>
-        <li>
-          <div>
-            <img src="" alt="Imagen del integrante Aldair">
+    <section class="container-team">
+      <h2 class="container-team__title">Integrantes</h2>
+      <p class="impact-mapping__paragraph">El equipo esta conformado por los estudiantes del 4to ciclo del instituto
+        IDAT</p>
+      <ul class="container-team__grid">
+        <li class="container-team__member">
+          <div class="container-team__image">
+            <img src="https://aldavm.github.io/profile/assets/img/profile-image.jpg" alt="Imagen del integrante Aldair">
           </div>
-          <h3>Aldair Valencia</h3>
-          <ul>
-            <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
-            <li><a href="#"><i class="fas fa-camera"></i> Profile</a></li>
-            <li><a href="#"><i class="fas fa-envelope"></i> Email</a></li>
+          <h3 class="">Aldair Valencia</h3>
+          <ul class="social-media">
+            <li class="social-media__item"><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+            <li class="social-media__item"><a href="#"><i class="fas fa-camera"></i> Profile</a></li>
+            <li class="social-media__item"><a href="#"><i class="fas fa-envelope"></i> Email</a></li>
           </ul>
         </li>
-        <li>
-          <div>
-            <img src="" alt="Imagen del integrante Aldair">
+        <li class="container-team__member">
+          <div class="container-team__image">
+            <img src="https://aldavm.github.io/profile/assets/img/profile-image.jpg" alt="Imagen del integrante Aldair">
           </div>
-          <h3>Aldair Valencia</h3>
-          <ul>
-            <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
-            <li><a href="#"><i class="fas fa-camera"></i> Profile</a></li>
-            <li><a href="#"><i class="fas fa-envelope"></i> Email</a></li>
+          <h3 class="">Aldair Valencia</h3>
+          <ul class="social-media">
+            <li class="social-media__item"><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+            <li class="social-media__item"><a href="#"><i class="fas fa-camera"></i> Profile</a></li>
+            <li class="social-media__item"><a href="#"><i class="fas fa-envelope"></i> Email</a></li>
           </ul>
         </li>
-        <li>
-          <div>
-            <img src="" alt="Imagen del integrante Aldair">
+        <li class="container-team__member">
+          <div class="container-team__image">
+            <img src="https://aldavm.github.io/profile/assets/img/profile-image.jpg" alt="Imagen del integrante Aldair">
           </div>
-          <h3>Aldair Valencia</h3>
-          <ul>
-            <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
-            <li><a href="#"><i class="fas fa-camera"></i> Profile</a></li>
-            <li><a href="#"><i class="fas fa-envelope"></i> Email</a></li>
+          <h3 class="">Aldair Valencia</h3>
+          <ul class="social-media">
+            <li class="social-media__item"><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+            <li class="social-media__item"><a href="#"><i class="fas fa-camera"></i> Profile</a></li>
+            <li class="social-media__item"><a href="#"><i class="fas fa-envelope"></i> Email</a></li>
           </ul>
         </li>
-        <li>
-          <div>
-            <img src="" alt="Imagen del integrante Aldair">
+        <li class="container-team__member">
+          <div class="container-team__image">
+            <img src="https://aldavm.github.io/profile/assets/img/profile-image.jpg" alt="Imagen del integrante Aldair">
           </div>
-          <h3>Aldair Valencia</h3>
-          <ul>
-            <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
-            <li><a href="#"><i class="fas fa-camera"></i> Profile</a></li>
-            <li><a href="#"><i class="fas fa-envelope"></i> Email</a></li>
+          <h3 class="">Aldair Valencia</h3>
+          <ul class="social-media">
+            <li class="social-media__item"><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+            <li class="social-media__item"><a href="#"><i class="fas fa-camera"></i> Profile</a></li>
+            <li class="social-media__item"><a href="#"><i class="fas fa-envelope"></i> Email</a></li>
           </ul>
         </li>
       </ul>
     </section>
   </main>
-  <footer>
-
+  <footer class="footer-site">
+    Derechos reservados &copy; 2020
   </footer>
 </body>
 
