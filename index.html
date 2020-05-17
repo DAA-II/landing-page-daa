@@ -9,17 +9,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
   <script src="https://kit.fontawesome.com/508f7c03d6.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-  <script type="module" src="./js/index.js-" defer></script>
+  <script type="module" src="./js/index.js" defer></script>
   <title>Proyecto DAAII</title>
 </head>
 
 <body>
   <header class="header-site">
-    <nav class="container navbar-site">
+    <div class="bar-top">
+      <div class="button-theme" id="buttonChangeTheme">
+        <span><i class="fas fa-sun"></i></span>
+        <span class="hide"><i class="fas fa-moon"></i></span>
+      </div>
+    </div>
+
+    <nav class="navbar-site" id="menu">
       <ul class="navbar-site__list">
-        <li class="navbar-site__item"><a href="#contentProject">Descripción</a></li>
-        <li class="navbar-site__item"><a href="#contentImpactMap">Impact Mapping</a></li>
-        <li class="navbar-site__item"><a href="#contentTeam">Integrantes</a></li>
+        <li class="navbar-site__item" data-section="description-content">Descripción</li>
+        <li class="navbar-site__item" data-section="impact-mapping">Impact Mapping</li>
+        <li class="navbar-site__item" data-section="container-team">Integrantes</li>
       </ul>
     </nav>
   </header>
