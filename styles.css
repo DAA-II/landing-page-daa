@@ -72,7 +72,6 @@ a {
   position: fixed;
   z-index: 100;
   width: 100%;
-  
 }
 
 .navbar-site {
@@ -139,6 +138,8 @@ a {
 }
 
 .container-team {
+  position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,33 +149,58 @@ a {
   padding: 6rem 0;
 }
 
+.tns-outer {
+  padding: 0 !important;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tns-controls [aria-controls] {
+  font-size: 15px;
+  margin: 0 5px;
+  padding: 0 1.5em;
+  height: 2.5em;
+  color: #000;
+  background-color: var(--colorPrimary);
+  border-radius: 3px;
+  border: 0;
+}
+
+.tns-nav>[aria-controls] {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin: 1rem 5px;
+  border-radius: 50%;
+  background-color: var(--colorPrimary);
+  border: 0;
+}
+
 .container-team__title {
   padding-bottom: 2rem;
 }
 
-.container-team__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
-}
-
-@media (max-width: 1000px) {
-  .container-team__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .container-team__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.container-team__slider {
+  display: block;
 }
 
 .container-team__member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #ccc;
   padding: 2em;
   border-radius: .5em;
+  margin: 0 1em;
+  max-width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow linear 0.3s;
+}
+
+.container-team__member:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container-team__image img {
@@ -186,16 +212,29 @@ a {
 
 .social-media {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 1em;
 }
 
+.gmail {
+  color: #D44638;
+}
+
+.github {
+  color: #4183C4;
+}
+
+.profile {
+  color: teal;
+}
+
 .social-media__item {
-  padding: 0 1em;
+  padding: 0 .5em;
 }
 
 .social-media__item a {
   text-decoration: none;
-  color: var(--colorSecondary);
 }
 
 .footer-site {
