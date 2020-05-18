@@ -1,6 +1,6 @@
 # Proyecto Landing Page curso Desarollo Avanzado de Aplicaciones II
 
-[Ver proyecto]()
+[Ver proyecto](https://daa-ii.github.io/landing-page-daa/)
 
 Integrantes:
 
